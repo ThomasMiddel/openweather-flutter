@@ -1,5 +1,3 @@
-
-
 import 'package:dio/dio.dart';
 import 'package:dio_flutter_transformer/dio_flutter_transformer.dart';
 import 'package:get_it/get_it.dart';
@@ -36,7 +34,7 @@ class ServiceLocator {
         InterceptorsWrapper(
           onRequest: (RequestOptions options) async {
             options.headers['x-rapidapi-host'] = 'community-open-weather-map.p.rapidapi.com';
-            options.headers['x-rapidapi-key'] = '9100e383f4msh72f066e78203fbdp181e60jsn74e9a0ec70b8';
+            options.headers['x-rapidapi-key'] = 'YOUR_API_KEY'; // TODO Add your API key here
           },
         ),
       );
